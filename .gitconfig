@@ -1,3 +1,15 @@
 [user]
 	name = yxy
 	email = yan5yang@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	unstage = reset HEAD --
