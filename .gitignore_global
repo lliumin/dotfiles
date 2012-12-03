@@ -1,0 +1,34 @@
+*~
+# Compiled source#
+##################
+*.py[co]
+*.egg
+*.egg-info
+*.o
+*.so
+*.exe
+*.dll
+*.class
+*.com
+
+# Packages #
+##############
+*.7z
+*.gz
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+*.tgz
+*.tar.gz
+*.zip
+*.tbz2
+*.tar.bz2
+dist
+build
+pip-log.txt
+
+# Logs #
+#########
+*.log
