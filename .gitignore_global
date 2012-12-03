@@ -1,4 +1,9 @@
+# Backup files #
 *~
+*.orig
+*.bak
+*.old
+
 # Compiled source#
 ##################
 *.py[co]
