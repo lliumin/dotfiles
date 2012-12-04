@@ -234,6 +234,11 @@ call pathogen#infect()
 " => Plugins config
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" TComment
 nmap // :TComment<CR>
 vmap // :TComment<CR>
+
+" NERDTree
+nmap <leader>t :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
