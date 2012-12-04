@@ -92,7 +92,7 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nobackup
 set nowb
-" set noswapfile " may dangourse
+set noswapfile " may dangourse
 
 " Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -122,6 +122,8 @@ set selectmode=key
 set listchars=tab:»·,trail:·,precedes:<,extends:>
 " display unprintable characters with '^' and put $ after the line
 set list
+" hidden tab when open html,xml file
+autocmd filetype html,xml set listchars-=tab:»·
 syntax sync fromstart
 
 """"""""""""""""""""""""""""""
