@@ -13,3 +13,12 @@
 [submodule ".vim/bundle/command-t"]
 	path = .vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/bundle/zencoding-vim"]
+	path = .vim/bundle/zencoding-vim
+	url = https://github.com/mattn/zencoding-vim.git
+[submodule ".vim/bundle/rainbow_parentheses"]
+	path = .vim/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git
