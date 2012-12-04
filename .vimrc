@@ -182,6 +182,9 @@ set viminfo^=%
 " Remap VIM 0 to first non-blank character
 map 0 ^
 
+" map kj to <esc>
+:map! kj <esc>
+
 " 保存时删除行尾的空白
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
@@ -224,5 +227,4 @@ function! HasPaste()
     return ''
 endfunction
 
-" map kj to <esc>
-:map! kj <esc>
+call pathogen#infect()
