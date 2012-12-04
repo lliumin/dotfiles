@@ -80,9 +80,6 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme molokai
-let g:molokai_original=1
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -273,4 +270,7 @@ au Syntax * RainbowParenthesesLoadBraces
 map <leader>v <Plug>TaskList
 let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
 let g:tlRememberPosition = 1
+
+colorscheme molokai
+let g:molokai_original=1
 
