@@ -202,6 +202,17 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 map <leader>pp :setlocal paste!<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType python inoremap pdb import pdb;pdb.set_trace()
+autocmd FileType python inoremap #p # -*- coding:utf-8 -*-<cr>
+autocmd FileType python inoremap #_ #!/usr/bin/env python<ESC>o# -*- coding:utf-8 -*-<cr><cr>
+autocmd FileType python inorema if_ if __name__ == '__main__':
+autocmd FileType python inoremap xdate <c-r>=strftime("20%y-%m-%d")<cr>
+autocmd FileType python noremap <C-L> :!python %<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
