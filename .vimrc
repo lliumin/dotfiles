@@ -252,8 +252,8 @@ nmap // :TComment<CR>
 vmap // :TComment<CR>
 
 " NERDTree
-" nmap <leader>t :NERDTreeToggle<CR>
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+nmap <leader>T :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Commnad-T
 let g:CommandTMaxFiles=200000
@@ -261,3 +261,10 @@ let g:CommandTAlwaysShowDotFiles=1
 let g:CommandTMaxDepth=5
 " let g:CommandTScanDotDirectories=1
 let g:CommandTCancelMap='<C-x>'
+
+" Rainbow parentheses
+let g:rbpt_max = 16
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
