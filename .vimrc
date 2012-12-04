@@ -34,8 +34,10 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-nmap <leader>w :w<cr> " 快速保存
-nmap <leader>q :q!<cr> " 快速退出
+" 快速保存
+nmap <leader>w :w<CR>
+" 快速退出
+nmap <leader>q :q!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -248,6 +250,10 @@ nmap // :TComment<CR>
 vmap // :TComment<CR>
 
 " NERDTree
-nmap <leader>t :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" nmap <leader>t :NERDTreeToggle<CR>
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Commnad-T
+let g:CommandTMaxFiles=10000
+let g:CommandTMaxDepth=4
 
