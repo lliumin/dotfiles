@@ -223,3 +223,6 @@ function! HasPaste()
     en
     return ''
 endfunction
+
+" map kj to <esc>
+:map! kj <esc>
