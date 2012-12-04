@@ -121,7 +121,9 @@ set wildchar=9 " tab as completion character
 set selectmode=key
 
 " display unprintable characters, tab will be `»·` and space will be `·`
-set listchars=tab:»·,trail:·,precedes:<,extends:>
+" set listchars=tab:»·,trail:·,precedes:<,extends:>
+set listchars=tab:▸·,trail:·,precedes:<,extends:>
+" set listchars=tab:▸\ ,eol:¬
 " display unprintable characters with '^' and put $ after the line
 set list
 " hidden tab when open html,xml file
@@ -139,7 +141,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " set clipboard+=unnamed  " Yanks go on clipboard instead.
 "  Autocmd
 autocmd BufRead,BufNewFile *.html set shiftwidth=2
-autocmd BufRead,BufNewFile *.c, *.h set shiftwidth=4
+autocmd BufRead,BufNewFile *.c,*.h set shiftwidth=4
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
@@ -254,6 +256,8 @@ vmap // :TComment<CR>
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Commnad-T
-let g:CommandTMaxFiles=10000
-let g:CommandTMaxDepth=4
-
+let g:CommandTMaxFiles=200000
+let g:CommandTAlwaysShowDotFiles=1
+let g:CommandTMaxDepth=5
+" let g:CommandTScanDotDirectories=1
+let g:CommandTCancelMap='<C-x>'
