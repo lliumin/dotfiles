@@ -160,7 +160,7 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
 " make ; as :
-nnoremap ; :
+" nnoremap ; :
 " when Wrap lines, makes 
 nnoremap j gj
 nnoremap k gk
@@ -268,3 +268,8 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Tasklist
+map <leader>v <Plug>TaskList
+let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
+let g:tlRememberPosition = 1
