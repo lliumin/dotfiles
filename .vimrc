@@ -15,6 +15,7 @@
 "    -> Editing mappings
 "    -> Misc
 "    -> Helper functions
+"    -> Plugins config
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -228,3 +229,11 @@ function! HasPaste()
 endfunction
 
 call pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins config
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+nmap // :TComment<CR>
+vmap // :TComment<CR>
+
