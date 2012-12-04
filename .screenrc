@@ -25,7 +25,7 @@ screen -t bash 0
 screen -t bash 1
 select 0
 
-# escape ^A^A
+escape ^A^A
 bindkey ,z prev
 bindkey ,x next
 bindkey ,[ prev
