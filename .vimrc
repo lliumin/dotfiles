@@ -155,6 +155,13 @@ map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
+" make ; as :
+nnoremap ; :
+" when Wrap lines, makes 
+nnoremap j gj
+nnoremap k gk
+" clear highlight search, instead of type blanwjlwjelwj
+nmap <silent> ,/ :nohlsearch<CR>
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
