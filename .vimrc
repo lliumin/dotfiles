@@ -129,8 +129,7 @@ syntax sync fromstart
 set number " 显示行数
 set laststatus=2 " Always show status line
 " Format the status line
-" TODO: show fileencoding
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ %p%%\ [%{strlen(&fenc)?&fenc:&enc}]\ #%n
 
 " set clipboard+=unnamed  " Yanks go on clipboard instead.
 "  Autocmd
