@@ -273,6 +273,13 @@ map <leader>v <Plug>TaskList
 let g:tlTokenList = ['FIXME', 'TODO', 'XXX']
 let g:tlRememberPosition = 1
 
+" Tlist
+if has("unix")
+  " FIXME
+  let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
+endif
+nnoremap <C-T> :TlistToggle<CR>
+
 colorscheme molokai
 let g:molokai_original=1
 
