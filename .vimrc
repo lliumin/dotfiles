@@ -107,7 +107,7 @@ set tabstop=4
 
 " Linebreak on 78 characters
 set linebreak
-set textwidth=78
+set textwidth=200
 
 set autoindent "Auto indent
 set smartindent "Smart indent
@@ -279,6 +279,10 @@ if has("unix")
   let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
 endif
 nnoremap <C-T> :TlistToggle<CR>
+
+" Zen-code
+let g:user_zen_expandabbr_key='<C-E>'
+let g:use_zen_complete_tag=1
 
 colorscheme molokai
 let g:molokai_original=1
