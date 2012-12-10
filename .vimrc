@@ -284,6 +284,10 @@ nnoremap <C-T> :TlistToggle<CR>
 let g:user_zen_expandabbr_key='<C-E>'
 let g:use_zen_complete_tag=1
 
+" colorscheme
 colorscheme molokai
 let g:molokai_original=1
+
+" supertab
+" let g:SuperTabDefaultCompletionType="<C-P>"
 
