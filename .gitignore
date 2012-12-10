@@ -5,3 +5,4 @@
 *.tbz2
 *.tar.bz2
 *.o
+.netrwhist
