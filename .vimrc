@@ -292,3 +292,5 @@ let g:molokai_original=1
 " supertab
 " let g:SuperTabDefaultCompletionType="<C-P>"
 
+" UltiSnips
+let g:UltiSnipsUsePythonVersion = 2
