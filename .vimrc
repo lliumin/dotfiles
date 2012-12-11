@@ -23,6 +23,7 @@
 set history=100 " keep track of last commands
 set nocp " 禁止兼容模式
 set backspace=2 " make backspace work like most other apps
+set t_Co=256
 " :fixdel
 
 " Enable filetype plugins
