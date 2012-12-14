@@ -41,6 +41,8 @@ let g:mapleader = ","
 nmap <leader>w :w<CR>
 " 快速退出
 nmap <leader>q :q!<CR>
+" quick save and quit
+nmap <leader>x :wq!<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -221,13 +223,8 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Shortcuts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType python inoremap pdb import pdb;pdb.set_trace()
-autocmd FileType python inoremap #p # -*- coding:utf-8 -*-<cr>
-autocmd FileType python inoremap #_ #!/usr/bin/env python<ESC>o# -*- coding:utf-8 -*-<cr><cr>
-autocmd FileType python inorema if_ if __name__ == '__main__':
-autocmd FileType python inoremap xdate <c-r>=strftime("20%y-%m-%d")<cr>
-autocmd FileType python noremap <C-L> :!python %<CR>
-
+autocmd FileType html,xhtml,django.html noremap <C-L> :!open %<CR>
+autocmd FileType html,xhtml set filetype=htmldjango
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -252,8 +249,10 @@ nmap // :TComment<CR>
 vmap // :TComment<CR>
 
 " NERDTree
-nmap <leader>T :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeShowHidden=1
+nmap <leader>T :NERDTreeToggle<CR>
+nnoremap <C-M> :NERDTreeToggle<CR>
 
 " Commnad-T
 let g:CommandTMaxFiles=200000
@@ -285,12 +284,10 @@ nnoremap <C-T> :TlistToggle<CR>
 let g:user_zen_expandabbr_key='<C-E>'
 let g:use_zen_complete_tag=1
 
-" colorscheme
+" Colorscheme
 colorscheme molokai
 let g:molokai_original=1
 
-" supertab
-" let g:SuperTabDefaultCompletionType="<C-P>"
-
 " UltiSnips
 let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsEditSplit = 'horizontal'
