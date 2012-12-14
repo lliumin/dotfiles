@@ -54,4 +54,4 @@
 	url = https://github.com/tomtom/tlib_vim.git
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
+	url = https://github.com/yxy/ultisnips.git
