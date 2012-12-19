@@ -2,15 +2,17 @@
 	name = yxy
 	email = yan5yang@gmail.com
 [color]
-	ui = auto
+	ui = true
 [core]
 	editor = vim
 	excludesfile = /Users/yxy/.gitignore_global
+	pager = cat
 [merge]
 	tool = vimdiff
 [alias]
 	st = status
-	ci = commit
+	ci = commit -s
 	co = checkout
 	br = branch
-	unstage = reset HEAD --
+	unstage = reset HEAD
+	plog = log --pretty=oneline --graph --stat

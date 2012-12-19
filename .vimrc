@@ -251,8 +251,8 @@ vmap // :TComment<CR>
 " NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let NERDTreeShowHidden=1
-nmap <leader>T :NERDTreeToggle<CR>
-nnoremap <C-M> :NERDTreeToggle<CR>
+" nmap <leader>T :NERDTreeToggle<CR>
+" nnoremap <C-M> :NERDTreeToggle<CR>
 
 " Commnad-T
 let g:CommandTMaxFiles=200000
