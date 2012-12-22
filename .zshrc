@@ -35,5 +35,6 @@ cdpath=(~ ~/Shortcuts ~/Library/Python/2.7/lib/python/site-packages ~/.local/lib
 alias api="sudo apt-get -y install"
 alias psi="python -m 'SimpleHTTPServer'"
 alias dj_run="./manage.py runserver 0.0.0.0:800${1:-0}"
+alias up-sub="git submodule foreach git pull origin master; git submodule update"
 export PIP_DOWNLOAD_CACHE="~/.pipcache"
 export OH_MY_ZSH_HG=""

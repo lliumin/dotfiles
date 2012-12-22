@@ -16,3 +16,5 @@
 	br = branch
 	unstage = reset HEAD
 	plog = log --pretty=oneline --graph --stat
+	glog = log --graph 
+	sline = rev-list --oneline  --all
