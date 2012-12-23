@@ -38,3 +38,5 @@ alias dj_run="./manage.py runserver 0.0.0.0:800${1:-0}"
 alias up-sub="git submodule foreach git pull origin master; git submodule update"
 export PIP_DOWNLOAD_CACHE="~/.pipcache"
 export OH_MY_ZSH_HG=""
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
