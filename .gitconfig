@@ -6,7 +6,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/yxy/.gitignore_global
-	pager = cat
+    # pager = cat
 [merge]
 	tool = vimdiff
 [alias]

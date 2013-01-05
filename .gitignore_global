@@ -37,3 +37,7 @@ pip-log.txt
 # Logs #
 #########
 *.log
+
+# Others #
+#########
+.DS_Store

@@ -144,6 +144,9 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 "  Autocmd
 autocmd BufRead,BufNewFile *.html set shiftwidth=2
 autocmd BufRead,BufNewFile *.c,*.h set shiftwidth=4
+autocmd FileType ruby,yaml setlocal expandtab autoindent shiftwidth=2 softtabstop=2
+" Trim trailing whitespace from Ruby and Yaml files
+autocmd BufWritePre *.rb,*.yml,*.yaml :%s/\s\+$//e
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers

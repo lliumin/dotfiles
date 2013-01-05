@@ -30,12 +30,12 @@ plugins=(git django pip osx fabric brew extract)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH=~/Scripts:~/Library/Python/2.7/bin:~/.local/bin:~/code/scripts:$PATH
+PATH=~/Scripts:~/Library/Python/2.7/bin:~/.local/bin:~/code/scripts:$PATH:/usr/local/sbin
 cdpath=(~ ~/Shortcuts ~/Library/Python/2.7/lib/python/site-packages ~/.local/lib/python2.7/site-packages)
 alias api="sudo apt-get -y install"
 alias psi="python -m 'SimpleHTTPServer'"
 alias dj_run="./manage.py runserver 0.0.0.0:800${1:-0}"
-alias up-sub="git submodule foreach git pull origin master; git submodule update"
+# alias up-sub="cd $(git rev-parse --show-toplevel) && git submodule foreach git pull origin master; git submodule update"
 export PIP_DOWNLOAD_CACHE="~/.pipcache"
 export OH_MY_ZSH_HG=""
 
