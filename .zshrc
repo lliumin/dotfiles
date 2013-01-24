@@ -35,8 +35,12 @@ cdpath=(~ ~/Shortcuts ~/Library/Python/2.7/lib/python/site-packages ~/.local/lib
 alias api="sudo apt-get -y install"
 alias psi="python -m 'SimpleHTTPServer'"
 alias dj_run="./manage.py runserver 0.0.0.0:800${1:-0}"
+alias full_scr="move_window 0"
+alias mini_scr="move_window 021"
 # alias up-sub="cd $(git rev-parse --show-toplevel) && git submodule foreach git pull origin master; git submodule update"
 export PIP_DOWNLOAD_CACHE="~/.pipcache"
 export OH_MY_ZSH_HG=""
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export LUA_PATH='/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/Users/yxy/.luarocks/share/lua/5.1/?.lua;/Users/yxy/.luarocks/share/lua/5.1/?/init.lua;/usr/local/Cellar/luarocks/2.0.12/share/lua/5.1//?.lua;/usr/local/Cellar/luarocks/2.0.12/share/lua/5.1//?/init.lua;./?.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua'
+export LUA_CPATH='/usr/local/lib/lua/5.1/?.so;/Users/yxy/.luarocks/lib/lua/5.1/?.so;./?.so;/usr/local/lib/lua/5.1/loadall.so'

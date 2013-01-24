@@ -41,3 +41,8 @@ pip-log.txt
 # Others #
 #########
 .DS_Store
+
+# SVN mercurial
+################
+.svn
+.hg

@@ -138,7 +138,7 @@ syntax sync fromstart
 set number " 显示行数
 set laststatus=2 " Always show status line
 " Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ %p%%\ [%{strlen(&fenc)?&fenc:&enc}]\ #%n
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ %h\ \ \ Line:\ %l/%L%*\ %p%%\ [%{strlen(&fenc)?&fenc:&enc}]\ #%n
 
 " set clipboard+=unnamed  " Yanks go on clipboard instead.
 "  Autocmd
@@ -213,6 +213,7 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+autocmd BufWrite *.lua :call DeleteTrailingWS()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
@@ -294,3 +295,9 @@ let g:molokai_original=1
 " UltiSnips
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsEditSplit = 'horizontal'
+
+" some shortcut for execute current file
+au BufRead,BufNewFile *.lua nmap <C-l> :!lua %<CR>
+au BufRead,BufNewFile *.py nmap <C-l> :!python %<CR>
+au BufRead,BufNewFile *.php nmap <C-l> :!php %<CR>
+au BufRead,BufNewFile *.sh nmap <C-l> :!/bin/sh %<CR>
