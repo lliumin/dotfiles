@@ -285,8 +285,21 @@ endif
 nnoremap <C-T> :TlistToggle<CR>
 
 " Zen-code
-let g:user_zen_expandabbr_key='<C-E>'
-let g:use_zen_complete_tag=1
+" let g:user_zen_expandabbr_key='<C-E>'
+" let g:use_zen_complete_tag=1
+let g:user_zen_expandabbr_key='<C-e>'
+let g:user_zen_settings = {
+            \  'php' : {
+            \    'extends' : 'html',
+            \    'filters' : 'c',
+            \  },
+            \  'xml' : {
+            \    'extends' : 'html',
+            \  },
+            \  'haml' : {
+            \    'extends' : 'html',
+            \  },
+            \}
 
 " Colorscheme
 colorscheme molokai
@@ -296,8 +309,20 @@ let g:molokai_original=1
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsEditSplit = 'horizontal'
 
+" Javascript
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
 " some shortcut for execute current file
 au BufRead,BufNewFile *.lua nmap <C-l> :!lua %<CR>
 au BufRead,BufNewFile *.py nmap <C-l> :!python %<CR>
 au BufRead,BufNewFile *.php nmap <C-l> :!php %<CR>
 au BufRead,BufNewFile *.sh nmap <C-l> :!/bin/sh %<CR>
+
+" Indentation
+autocmd FileType javascript,html,css,php set ai
+autocmd FileType javascript,html,css,php set sw=2
+autocmd FileType javascript,html,css,php set ts=2
+autocmd FileType javascript,html,css,php set sts=2
+autocmd FileType javascript,css,php set textwidth=79
